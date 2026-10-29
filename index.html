@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Rana | Portfolio</title>
+  <meta name="description" content="Portfolio of Ayush Rana - 1st Year B.Tech Student at Rishihood University, Problem Solver, and Sports Enthusiast.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Background Glow Accents -->
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Ayush<span class="logo-accent">.Rana</span><span class="logo-bracket"> /&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Personal</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#technical" class="nav-link">Technical</a>
+        <a href="#sports" class="nav-link">Sports</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-content">
+      <div class="badge-pill">
+        <span class="pulse-dot"></span> 1st Year B.Tech Student @ Rishihood University
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Ayush Rana</span>
+      </h1>
+      <h2 class="hero-subtitle">
+        I am an aspiring engineer into <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-description">
+        Hailing from Meerut, UP. Passionate about tackling complex algorithmic challenges, building strong programming fundamentals, exploring applied mathematics, and staying fiercely active on the sports field.
+      </p>
+
+      <div class="hero-badges">
+        <div class="hero-badge-item">
+          <i class="fa-solid fa-location-dot"></i> Meerut, Uttar Pradesh
+        </div>
+        <div class="hero-badge-item">
+          <i class="fa-solid fa-graduation-cap"></i> Army Public School Alumnus
+        </div>
+        <div class="hero-badge-item">
+          <i class="fa-solid fa-futbol"></i> Football & Badminton Enthusiast
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#technical" class="btn btn-primary">
+          <i class="fa-solid fa-terminal"></i> Technical Journey
+        </a>
+        <a href="#sports" class="btn btn-secondary">
+          <i class="fa-solid fa-medal"></i> Sports & Passions
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Let's Connect
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename"><i class="fa-brands fa-python"></i> ayush_profile.py</span>
+        </div>
+        <pre class="code-body"><code><span class="k">class</span> <span class="nc">AyushRana</span>:
+    <span class="k">def</span> <span class="nf">__init__</span>(<span class="bp">self</span>):
+        <span class="bp">self</span>.name = <span class="s">"Ayush Rana"</span>
+        <span class="bp">self</span>.origin = <span class="s">"Meerut, Uttar Pradesh"</span>
+        <span class="bp">self</span>.school = <span class="s">"Army Public School, Meerut Cantt"</span>
+        <span class="bp">self</span>.college = <span class="s">"Rishihood University"</span>
+        <span class="bp">self</span>.year = <span class="s">"1st Year B.Tech"</span>
+        <span class="bp">self</span>.passions = [<span class="s">"Coding"</span>, <span class="s">"Problem Solving"</span>, <span class="s">"Math"</span>]
+        <span class="bp">self</span>.sports = [<span class="s">"Football"</span>, <span class="s">"Badminton"</span>, <span class="s">"Almost Any Sport"</span>]
+        <span class="bp">self</span>.sports_blacklist = [<span class="s">"Basketball 🚫🏀"</span>]
+
+    <span class="k">def</span> <span class="nf">daily_routine</span>(<span class="bp">self</span>):
+        <span class="k">return</span> <span class="s">"Code 💻 -> Solve Problems 🧩 -> Play Sports ⚽ -> Repeat 🔁"</span>
+
+me = <span class="nc">AyushRana</span>()
+<span class="nb">print</span>(me.daily_routine())</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Personal Info -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">WHO I AM</span>
+        <h2 class="section-title">Personal <span class="gradient-text">Information</span></h2>
+        <p class="section-subtitle">A glimpse into my background, origins, and core values.</p>
+      </div>
+
+      <div class="personal-grid">
+        <div class="personal-card main-bio-card">
+          <div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h3>About Me</h3>
+          <p>
+            Hello! I'm <strong>Ayush Rana</strong>, currently pursuing my B.Tech degree as a 1st-year student at <strong>Rishihood University</strong>. Born and brought up in the historic city of <strong>Meerut, Uttar Pradesh</strong>, I completed my schooling at <strong>Army Public School, Meerut Cantt</strong>.
+          </p>
+          <p>
+            Growing up with an Army Public School background nurtured my discipline, curiosity, and teamwork. Today, I channel that drive into learning modern computer science fundamentals, mastering problem solving, and staying active in competitive sports.
+          </p>
+          <div class="personal-quick-stats">
+            <div class="stat-box">
+              <span class="stat-number">1st</span>
+              <span class="stat-label">Year B.Tech</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Dedication</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">APS</span>
+              <span class="stat-label">Schooling Roots</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-card">
+          <div class="card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h3>Native Roots</h3>
+          <h4>Meerut, Uttar Pradesh</h4>
+          <p>
+            Proudly rooted in Meerut—known for its vibrant culture, sports goods industry, and rich history. It has given me resilience, grounded perspective, and an innate drive to aim high.
+          </p>
+          <div class="tag-row">
+            <span class="mini-tag"><i class="fa-solid fa-city"></i> Meerut</span>
+            <span class="mini-tag"><i class="fa-solid fa-flag"></i> Uttar Pradesh</span>
+            <span class="mini-tag"><i class="fa-solid fa-compass"></i> North India</span>
+          </div>
+        </div>
+
+        <div class="personal-card">
+          <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Mindset & Approach</h3>
+          <h4>Curious & Analytical</h4>
+          <p>
+            I thrive at the intersection of logical analytical thinking and athletic grit. When faced with an error or a challenging problem, I enjoy breaking it down step-by-step until it's resolved.
+          </p>
+          <div class="tag-row">
+            <span class="mini-tag">Logical Thinker</span>
+            <span class="mini-tag">Team Player</span>
+            <span class="mini-tag">Continuous Learner</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Education Journey -->
+  <section class="section alt-bg" id="education">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">ACADEMIC PATH</span>
+        <h2 class="section-title">Educational <span class="gradient-text">Journey</span></h2>
+        <p class="section-subtitle">Where I learned my fundamentals and where I am currently building my future.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- University -->
+        <div class="timeline-item left">
+          <div class="timeline-marker">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-status active">Current Degree</span>
+              <span class="timeline-year">2026 - Present</span>
+            </div>
+            <h3>B.Tech - Computer Science / Engineering</h3>
+            <h4>Rishihood University</h4>
+            <p>
+              Currently enrolled as a <strong>1st Year Student</strong>. Focusing on computational logic, core programming, data handling, and engineering mathematics while actively participating in tech and student communities.
+            </p>
+            <div class="timeline-tags">
+              <span>B.Tech Undergrad</span>
+              <span>1st Year</span>
+              <span>Software Foundations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schooling -->
+        <div class="timeline-item right">
+          <div class="timeline-marker">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-status completed">Schooling Completed</span>
+              <span class="timeline-year">Graduated</span>
+            </div>
+            <h3>High School & Intermediate</h3>
+            <h4>Army Public School (APS), Meerut Cantt</h4>
+            <p>
+              Completed primary and secondary education in one of Meerut's premier institutions. The disciplined environment instilled strong work ethics, academic grounding in Science & Mathematics, and an enduring love for sports and extracurricular activities.
+            </p>
+            <div class="timeline-tags">
+              <span>APS Meerut Cantt</span>
+              <span>Science & Mathematics</span>
+              <span>Discipline & Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Technical Info -->
+  <section class="section" id="technical">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">SKILLS & COMPETENCIES</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Profile</span></h2>
+        <p class="section-subtitle">My coding toolkit, algorithmic problem-solving focus, and mathematical foundations.</p>
+      </div>
+
+      <div class="tech-grid">
+        <!-- Focus Area 1 -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <div class="tech-icon-wrapper code-accent">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div>
+              <h3>Coding & Problem Solving</h3>
+              <span class="tech-badge">Core Passion</span>
+            </div>
+          </div>
+          <p>
+            I have a keen interest in programming and logic building. Currently channeling consistent effort into expanding my question-solving ability, algorithmic thinking, and writing clean, structured code.
+          </p>
+          <div class="tech-skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Problem Solving & Logic</span>
+                <span>In Progress</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python Programming</span>
+                <span>Active Learning</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Data Structures Fundamentals</span>
+                <span>Building Foundation</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 65%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Focus Area 2 -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <div class="tech-icon-wrapper math-accent">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div>
+              <h3>Mathematics & Analytical Logic</h3>
+              <span class="tech-badge">Foundational</span>
+            </div>
+          </div>
+          <p>
+            Possessing a natural curiosity for mathematics! I enjoy the rigor of mathematical proofs, discrete structures, and numerical reasoning—which directly power my approach to computer science problems.
+          </p>
+          <div class="math-pillars">
+            <div class="pillar-box">
+              <i class="fa-solid fa-square-root-variable"></i>
+              <span>Discrete Logic</span>
+            </div>
+            <div class="pillar-box">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Algebra & Calculus</span>
+            </div>
+            <div class="pillar-box">
+              <i class="fa-solid fa-circle-nodes"></i>
+              <span>Graph & Combinatorics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Focus Area 3 -->
+        <div class="tech-card">
+          <div class="tech-card-header">
+            <div class="tech-icon-wrapper tools-accent">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div>
+              <h3>Developer Tools & Git</h3>
+              <span class="tech-badge">Workflow</span>
+            </div>
+          </div>
+          <p>
+            Actively learning modern version control and developer workflows to collaborate smoothly and build projects systematically.
+          </p>
+          <div class="tools-grid">
+            <div class="tool-item">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="tool-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="tool-item">
+              <i class="fa-solid fa-terminal"></i>
+              <span>CLI / Bash</span>
+            </div>
+            <div class="tool-item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth Road Map -->
+      <div class="learning-roadmap-card">
+        <div class="roadmap-header">
+          <div class="roadmap-title">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h3>Current Technical Focus & Goals</h3>
+          </div>
+          <span class="status-pill"><i class="fa-solid fa-spinner fa-spin"></i> Active Sprint</span>
+        </div>
+        <div class="roadmap-steps">
+          <div class="roadmap-step">
+            <span class="step-num">01</span>
+            <h4>Algorithmic Problem Solving</h4>
+            <p>Solving regular programming problems to sharpen problem decomposition and time complexity awareness.</p>
+          </div>
+          <div class="roadmap-step">
+            <span class="step-num">02</span>
+            <h4>Core Data Structures</h4>
+            <p>Deep-diving into arrays, strings, linked lists, stacks, queues, and tree traversal logic.</p>
+          </div>
+          <div class="roadmap-step">
+            <span class="step-num">03</span>
+            <h4>Hands-on Project Building</h4>
+            <p>Translating theoretical knowledge into practical software applications, repositories, and utilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Sports Info (Dedicated Section) -->
+  <section class="section alt-bg" id="sports">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">BEYOND ACADEMICS</span>
+        <h2 class="section-title">Sports & <span class="gradient-text">Athletics</span></h2>
+        <p class="section-subtitle">Sports fuel my focus, fitness, and team spirit. Here is what I love playing.</p>
+      </div>
+
+      <div class="sports-grid">
+        <!-- Football -->
+        <div class="sports-card highlight-sport">
+          <div class="sports-icon-bubble">
+            <i class="fa-solid fa-futbol"></i>
+          </div>
+          <div class="sports-badge">Favorite Team Sport</div>
+          <h3>Football</h3>
+          <p>
+            Whether on the school grounds of APS Meerut Cantt or at college, football has always been a primary passion. It has taught me field vision, communication, explosive stamina, and trusting my teammates under pressure.
+          </p>
+          <div class="sports-traits">
+            <span class="trait-tag"><i class="fa-solid fa-users"></i> Team Synergy</span>
+            <span class="trait-tag"><i class="fa-solid fa-bolt"></i> High Stamina</span>
+            <span class="trait-tag"><i class="fa-solid fa-crosshairs"></i> Tactical Vision</span>
+          </div>
+        </div>
+
+        <!-- Badminton -->
+        <div class="sports-card">
+          <div class="sports-icon-bubble">
+            <i class="fa-solid fa-feather-pointed"></i>
+          </div>
+          <div class="sports-badge">Racket Sport</div>
+          <h3>Badminton</h3>
+          <p>
+            Badminton gives me rapid reflex conditioning and quick decision-making under fast-paced rallies. The precision required for sharp drops and powerful smashes mirrors the focus needed when debugging complex code.
+          </p>
+          <div class="sports-traits">
+            <span class="trait-tag"><i class="fa-solid fa-gauge-high"></i> Reflexes</span>
+            <span class="trait-tag"><i class="fa-solid fa-shoe-prints"></i> Agility</span>
+            <span class="trait-tag"><i class="fa-solid fa-bullseye"></i> Precision</span>
+          </div>
+        </div>
+
+        <!-- Multi-Sport Enthusiast -->
+        <div class="sports-card">
+          <div class="sports-icon-bubble">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div class="sports-badge">All-Rounder</div>
+          <h3>Multi-Sport Enthusiast</h3>
+          <p>
+            Beyond football and badminton, I eagerly participate in practically any sport or athletic activity. From sprinting to table tennis and recreational games, physical activity is essential to my routine.
+          </p>
+          <div class="sports-traits">
+            <span class="trait-tag"><i class="fa-solid fa-heart-pulse"></i> Fitness First</span>
+            <span class="trait-tag"><i class="fa-solid fa-trophy"></i> Competitive Spirit</span>
+            <span class="trait-tag"><i class="fa-solid fa-smile"></i> Sportsmanship</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fun Quirk Card: The Basketball Exception -->
+      <div class="quirk-card">
+        <div class="quirk-icon">
+          <span class="emoji-stack">
+            <span class="emoji-main">🏀</span>
+            <span class="emoji-ban">🚫</span>
+          </span>
+        </div>
+        <div class="quirk-content">
+          <div class="quirk-tag">A Fun Personality Quirk!</div>
+          <h3>The "Except Basketball" Rule</h3>
+          <p>
+            <em>"Other than academics I also enjoy playing football, badminton, and any other sports <strong>except basketball</strong>."</em>
+          </p>
+          <p class="quirk-desc">
+            Passionate about pitch games, racket rallies, athletics, and field sports—but basketball is the one game that gets a permanent pass! Whether it's the hoops, the dribble rules, or just personal preference, my sports heart firmly belongs to football and badminton.
+          </p>
+        </div>
+        <div class="quirk-action">
+          <button class="fun-btn" id="basketballFactBtn">
+            <i class="fa-solid fa-shuffle"></i> Fun Fact
+          </button>
+          <div id="funFactMessage" class="fun-message hidden">
+            "Ask me in person why basketball didn't make the cut!" 😉
+          </div>
+        </div>
+      </div>
+
+      <!-- Athletic-Mindset Bridge -->
+      <div class="sports-bridge-banner">
+        <div class="bridge-col">
+          <i class="fa-solid fa-arrows-split-up-and-left"></i>
+          <h4>Sports Meets Engineering</h4>
+          <p>The resilience learned from conceding a goal or dropping a point in badminton directly translates to debugging broken code without giving up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">REACH OUT</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Interested in collaborating on coding challenges, sports, or student projects? Let's connect!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-user"></i></div>
+            <div>
+              <h4>Name</h4>
+              <p>Ayush Rana</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-map-pin"></i></div>
+            <div>
+              <h4>Hometown</h4>
+              <p>Meerut, Uttar Pradesh, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div>
+              <h4>Institution</h4>
+              <p>Rishihood University (1st Year B.Tech)</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:ayushrana.dev@example.com">ayushrana.dev@example.com</a></p>
+            </div>
+          </div>
+
+          <!-- Social Buttons -->
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:ayushrana.dev@example.com" class="social-btn" title="Email">
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="e.g. rahul@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Coding, Football, or Project collaboration" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Ayush<span class="logo-accent">.Rana</span><span class="logo-bracket"> /&gt;</span>
+      </div>
+      <p class="footer-copy">
+        Crafted with passion • B.Tech Undergrad @ Rishihood University • Meerut Native
+      </p>
+      <div class="footer-credits">
+        <span>Army Public School Alumnus</span> • <span>Problem Solver</span> • <span>Football & Badminton</span>
+      </div>
+      <div class="scroll-top-wrapper">
+        <a href="#hero" class="scroll-top-btn" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
